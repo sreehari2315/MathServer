@@ -1,5 +1,5 @@
 # Ex.05 Design a Website for Server Side Processing
-## Date:15.04.24
+## Date:
 
 ## AIM:
 To design a website to find surface area of a Right Cylinder in server side.
@@ -47,11 +47,11 @@ Name: SREE HARI K
      rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh
      0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
-<body style="background-color: yellowgreen ;padding-top: 12%;">
+<body style="background-color: yellowgreen ;padding-top: 12%;padding-left: 30%; ">
     <form action="" method="post">
         {% csrf_token %}
         <div class="card mx-auto text-center" style="width: 30rem;">
-            <div class="card-header bg-primary text-white">
+            <div style="background-color: blue;color: white;text-align: center;">
                 Surface Area of Right Cylinder
             </div>
             <div class="card-body" style="background-color: yellow;">
@@ -65,9 +65,8 @@ Name: SREE HARI K
             </div>
         </div>
     </form>
-    <div class="card mx-auto text-center" style="width: 30rem;
-     background-color: rgb(13 110 253);color: white;">
-        By - Meenu.S,212223230124
+    <div  style="width: 30rem;background-color: rgb(13 110 253);color: white;text-align: center;">
+        By - SREE HARI K;Register No:212223230212
     </div>
 </body>
 </html>
@@ -88,7 +87,7 @@ def calculateArea(request):
 ~~~
 from django.contrib import admin
 from django.urls import path
-from ex5 import views
+from app2 import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.calculateArea)
@@ -101,7 +100,7 @@ urlpatterns = [
 
 
 ## HOMEPAGE:
-![322545938-9cdacaf5-5533-41ce-af0e-d849c9880832](https://github.com/sreehari2315/MathServer/assets/139331590/adf10713-bef9-48bf-a916-ae6250ae99bd)
+![Screenshot 2024-04-21 120552](https://github.com/sreehari2315/MathServer/assets/139331590/b7c47cd7-5992-4c32-b47e-680741fa033e)
 
 
 
